@@ -6,7 +6,7 @@ This is a sample Flask application demonstrating basic routes and JSON responses
 
 1. Clone the repository:
 Copy
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/Tanvir-yzu/flask-todo.git
 
 
 2. Install dependencies:
