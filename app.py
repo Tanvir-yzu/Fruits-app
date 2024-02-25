@@ -24,7 +24,7 @@ def hello_world():
 
 @app.route('/product')
 def product():
-    return render_template('/product.html')
+    return render_template('product.html')
 
 
 @app.route("/product")
