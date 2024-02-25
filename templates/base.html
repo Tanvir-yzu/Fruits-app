@@ -20,14 +20,26 @@
         }
         h1 {
             color: #007bff;
+            margin-bottom: 20px;
         }
         p {
-            font-size: 18px;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
         a {
             text-decoration: none;
             color: #007bff;
             font-weight: bold;
+            padding: 8px 16px;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            margin-right: 10px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        a:hover {
+            background-color: #007bff;
+            color: #fff;
         }
     </style>
 </head>
@@ -37,6 +49,7 @@
         <p>This is a simple home page created using HTML.</p>
         <p>Feel free to explore!</p>
         <a href="/product">View Products</a>
+        <a href="/search">Search Products</a>
     </div>
 </body>
 </html>
