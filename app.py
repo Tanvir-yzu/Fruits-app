@@ -30,6 +30,7 @@ def product():
 
 @app.route("/search", methods=["GET"])
 def search_products():
+    
     query_params = request.args
     name = query_params.get("name")
     if name:
