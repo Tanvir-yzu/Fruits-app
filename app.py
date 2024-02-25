@@ -7,61 +7,61 @@ data = {
     {
       "category": "Category 1",
       "id": "1",
-      "name": "Product 1",
+      "name": "Apple",
       "price": 100
     },
     {
       "category": "Category 2",
       "id": 2,
-      "name": "Product 2",
+      "name": "Banana",
       "price": 200
     },
     {
       "category": "Category 3",
       "id": 3,
-      "name": "Product 3",
+      "name": "Grapes",
       "price": 300
     },
     {
       "category": "Category 4",
       "id": 4,
-      "name": "Product 4",
+      "name": "Red Grapes",
       "price": 400
     },
     {
       "category": "Category 5",
       "id": 5,
-      "name": "Product 5",
+      "name": "	Jackfruit",
       "price": 500
     },
     {
       "category": "Category 6",
       "id": 6,
-      "name": "Product 6",
+      "name": "Mango",
       "price": 600
     },
     {
-      "category": "Category 7",
+      "category": "Orange",
       "id": 7,
-      "name": "Product 7",
+      "name": "Tamarind",
       "price": 700
     },
     {
       "category": "Category 8",
       "id": 8,
-      "name": "Product 8",
+      "name": "Tamarind",
       "price": 800
     },
     {
       "category": "Category 9",
       "id": 9,
-      "name": "Product 9",
+      "name": "	Custard apple",
       "price": 900
     },
     {
       "category": "Category 10",
       "id": 10,
-      "name": "Product 10",
+      "name": "Strawberry",
       "price": 1000
     }
   ]
@@ -69,7 +69,7 @@ data = {
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Welcome to First API</p>"
 
 @app.route("/product")
 def return_json():
@@ -90,24 +90,23 @@ def get_product_id(product_name):
 def get_products():
     products = []
     query_params = request.args
-    if 'category' in query_params:
-        category = query_params['category']
-        for product in data['products']:
-            if product['category'] == category:
-                products.append(product)
-    elif 'name' in query_params:
-        name = query_params['name']
-        for product in data['products']:
-            if name.lower() in product['name'].lower():
-                products.append(product)
-    elif 'id' in query_params:
-        product_id = query_params['id']
-        for product in data['products']:
-            if str(product['id']) == product_id:
-                products.append(product)
+    category = query_params.get('category')
+    name = query_params.get('name')
+    product_id = query_params.get('id')
+    if category:
+        products = [product for product in data['products'] if product['category'] == category]
+    elif name:
+        name = name.lower()
+        products = [product for product in data['products'] if name in product['name'].lower()]
+    elif product_id:
+        products = [product for product in data['products'] if str(product['id']) == product_id]
     else:
         products = data['products']
     return jsonify({'products': products})
+
+@app.errorhandler(Exception)
+def handle_error(e):
+    return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(debug=True)
