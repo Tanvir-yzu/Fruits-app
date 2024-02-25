@@ -61,6 +61,20 @@
       th {
         background-color: #f2f2f2;
       }
+      a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        padding: 8px 16px;
+        border: 2px solid #007bff;
+        border-radius: 4px;
+        margin-right: 10px;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    a:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
       @media (max-width: 768 px) {
         .container {
           width: 95 %; /* Adjusted container width for smaller screens */
@@ -78,9 +92,10 @@
   </head>
   <body>
     <div class="container">
-      <h1>Search Products</h1>
+      <a href="/">Back </a>
+      <h1>Search Fruits</h1>
       <form action="/search" method="GET">
-        <input type="text" name="name" placeholder="Enter product name" />
+        <input type="text" name="name" placeholder="Enter Fruits name" />
         <button type="submit">Search</button>
       </form>
     </div>
