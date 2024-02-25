@@ -10,7 +10,7 @@ data = {
         {"category": "Category 4", "id": 4, "name": "Red Grapes", "price": 400},
         {"category": "Category 5", "id": 5, "name": "	Jackfruit", "price": 500},
         {"category": "Category 6", "id": 6, "name": "Mango", "price": 600},
-        {"category": "Orange", "id": 7, "name": "Tamarind", "price": 700},
+        {"category": "Category 6", "id": 7, "name": "Orange", "price": 700},
         {"category": "Category 8", "id": 8, "name": "Tamarind", "price": 800},
         {"category": "Category 9", "id": 9, "name": "	Custard apple", "price": 900},
         {"category": "Category 10", "id": 10, "name": "Strawberry", "price": 1000},
