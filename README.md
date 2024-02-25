@@ -28,6 +28,9 @@ To get all products in "Category 1", you can use the following URL:
 ```
 https://flask-api-oj9q.onrender.com
 
+```
+```
+
 https://flask-api-oj9q.onrender.com/products
 ```
 
