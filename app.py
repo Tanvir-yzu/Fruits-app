@@ -56,6 +56,7 @@ def get_product_id(product_name):
     return jsonify({"error": "Product not found"})
 
 
+
 @app.route("/products", methods=["GET"])
 def get_products():
     products = []
