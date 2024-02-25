@@ -1,38 +1,38 @@
-# Flask Sample Application
 
-This is a sample Flask application demonstrating basic routes and JSON responses.
+# Product API
 
-## Installation
+This is a simple Flask API that provides information about products.
 
-1. Clone the repository:
-Copy
-git clone https://github.com/Tanvir-yzu/flask-todo.git
+## Endpoints
 
+- `/product`: Returns all products.
+- `/user/<username>`: Returns a user's profile.
+- `/id/<product_name>`: Returns the ID of a product.
+- `/products`: Returns products based on query parameters.
 
-2. Install dependencies:
-pip install Flask
+## Running the API
 
+1. Install the required packages using `pip install -r requirements.txt`.
+2. Run the API using `python app.py`.
 
-3. Run the application:
-flask run
+## Query Parameters
 
+- `category`: Filter products by category.
+- `name`: Filter products by name (case-insensitive).
+- `id`: Filter products by ID.
 
-Explain
+## Example
 
-## Usage
+To get all products in "Category 1", you can use the following URL:
 
-### Routes
+```
+https://flask-api-oj9q.onrender.com/products
+```
 
-- `/` : Displays "Hello, World!"
-- `/json` : Returns a JSON response with a customizable message
-- `/user/<username>` : Takes a parameter `username` and displays a custom message for the provided username
+## Error Handling
 
-You can access these routes using tools like web browsers or Postman.
+If a product is not found, the API will return a JSON object with an error message.
 
-## Contributing
+## Note
 
-If you'd like to contribute to this project, feel free to submit a pull request!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This API is for demonstration purposes only and does not include any authentication or authorization mechanisms.
