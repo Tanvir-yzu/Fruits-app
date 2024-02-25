@@ -1,0 +1,478 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "category": "Citrus",
+            "name": "Orange",
+            "price": 1.99
+        },
+        {
+            "id": 2,
+            "category": "Citrus",
+            "name": "Lemon",
+            "price": 0.99
+        },
+        {
+            "id": 3,
+            "category": "Berries",
+            "name": "Strawberry",
+            "price": 3.49
+        },
+        {
+            "id": 4,
+            "category": "Berries",
+            "name": "Blueberry",
+            "price": 2.99
+        },
+        {
+            "id": 5,
+            "category": "Tropical",
+            "name": "Pineapple",
+            "price": 2.49
+        },
+        {
+            "id": 6,
+            "category": "Tropical",
+            "name": "Mango",
+            "price": 1.79
+        },
+        {
+            "id": 7,
+            "category": "Citrus",
+            "name": "Grapefruit",
+            "price": 2.29
+        },
+        {
+            "id": 8,
+            "category": "Berries",
+            "name": "Raspberry",
+            "price": 4.99
+        },
+        {
+            "id": 9,
+            "category": "Tropical",
+            "name": "Banana",
+            "price": 1.29
+        },
+        {
+            "id": 10,
+            "category": "Stone Fruit",
+            "name": "Peach",
+            "price": 2.79
+        },
+        {
+            "id": 11,
+            "category": "Stone Fruit",
+            "name": "Plum",
+            "price": 1.89
+        },
+        {
+            "id": 12,
+            "category": "Tropical",
+            "name": "Coconut",
+            "price": 3.99
+        },
+        {
+            "id": 13,
+            "category": "Berries",
+            "name": "Blackberry",
+            "price": 3.79
+        },
+        {
+            "id": 14,
+            "category": "Citrus",
+            "name": "Lime",
+            "price": 0.79
+        },
+        {
+            "id": 15,
+            "category": "Stone Fruit",
+            "name": "Cherry",
+            "price": 4.49
+        },
+        {
+            "id": 16,
+            "category": "Tropical",
+            "name": "Kiwi",
+            "price": 1.69
+        },
+        {
+            "id": 17,
+            "category": "Citrus",
+            "name": "Clementine",
+            "price": 2.99
+        },
+        {
+            "id": 18,
+            "category": "Stone Fruit",
+            "name": "Apricot",
+            "price": 2.19
+        },
+        {
+            "id": 19,
+            "category": "Berries",
+            "name": "Cranberry",
+            "price": 3.29
+        },
+        {
+            "id": 20,
+            "category": "Tropical",
+            "name": "Papaya",
+            "price": 2.99
+        },
+        {
+            "id": 21,
+            "category": "Citrus",
+            "name": "Tangerine",
+            "price": 1.59
+        },
+        {
+            "id": 22,
+            "category": "Stone Fruit",
+            "name": "Nectarine",
+            "price": 2.49
+        },
+        {
+            "id": 23,
+            "category": "Berries",
+            "name": "Gooseberry",
+            "price": 4.49
+        },
+        {
+            "id": 24,
+            "category": "Tropical",
+            "name": "Dragon Fruit",
+            "price": 5.99
+        },
+        {
+            "id": 25,
+            "category": "Citrus",
+            "name": "Blood Orange",
+            "price": 3.49
+        },
+        {
+            "id": 26,
+            "category": "Stone Fruit",
+            "name": "Mango Plum",
+            "price": 3.89
+        },
+        {
+            "id": 27,
+            "category": "Tropical",
+            "name": "Passion Fruit",
+            "price": 4.99
+        },
+        {
+            "id": 28,
+            "category": "Berries",
+            "name": "Boysenberry",
+            "price": 4.79
+        },
+        {
+            "id": 29,
+            "category": "Stone Fruit",
+            "name": "Mirabelle",
+            "price": 2.99
+        },
+        {
+            "id": 30,
+            "category": "Citrus",
+            "name": "Yuzu",
+            "price": 6.99
+        },
+        {
+            "id": 31,
+            "category": "Tropical",
+            "name": "Guava",
+            "price": 2.29
+        },
+        {
+            "id": 32,
+            "category": "Berries",
+            "name": "Elderberry",
+            "price": 5.49
+        },
+        {
+            "id": 33,
+            "category": "Stone Fruit",
+            "name": "Green Plum",
+            "price": 2.19
+        },
+        {
+            "id": 34,
+            "category": "Citrus",
+            "name": "Ugli Fruit",
+            "price": 3.79
+        },
+        {
+            "id": 35,
+            "category": "Tropical",
+            "name": "Lychee",
+            "price": 4.29
+        },
+        {
+            "id": 36,
+            "category": "Berries",
+            "name": "Huckleberry",
+            "price": 6.49
+        },
+        {
+            "id": 37,
+            "category": "Stone Fruit",
+            "name": "Satsuma",
+            "price": 2.99
+        },
+        {
+            "id": 38,
+            "category": "Citrus",
+            "name": "Kumquat",
+            "price": 1.69
+        },
+        {
+            "id": 39,
+            "category": "Tropical",
+            "name": "Soursop",
+            "price": 7.99
+        },
+        {
+            "id": 40,
+            "category": "Berries",
+            "name": "Salmonberry",
+            "price": 8.49
+        },
+        {
+            "id": 41,
+            "category": "Stone Fruit",
+            "name": "Yellow Plum",
+            "price": 2.29
+        },
+        {
+            "id": 42,
+            "category": "Citrus",
+            "name": "Mandarin",
+            "price": 1.39
+        },
+        {
+            "id": 43,
+            "category": "Tropical",
+            "name": "Feijoa",
+            "price": 3.99
+        },
+        {
+            "id": 44,
+            "category": "Berries",
+            "name": "Loganberry",
+            "price": 5.79
+        },
+        {
+            "id": 45,
+            "category": "Stone Fruit",
+            "name": "Greengage",
+            "price": 3.29
+        },
+        {
+            "id": 46,
+            "category": "Citrus",
+            "name": "Bergamot",
+            "price": 4.49
+        },
+        {
+            "id": 47,
+            "category": "Tropical",
+            "name": "Pitahaya",
+            "price": 6.99
+        },
+        {
+            "id": 48,
+            "category": "Berries",
+            "name": "Marionberry",
+            "price": 6.29
+        },
+        {
+            "id": 49,
+            "category": "Stone Fruit",
+            "name": "Damson Plum",
+            "price": 2.99
+        },
+        {
+            "id": 50,
+            "category": "Citrus",
+            "name": "Tangelo",
+            "price": 2.59
+        },
+        {
+            "id": 51,
+            "category": "Tropical",
+            "name": "Pomelo",
+            "price": 3.99
+        },
+        {
+            "id": 52,
+            "category": "Berries",
+            "name": "Aronia Berry",
+            "price": 9.99
+        },
+        {
+            "id": 53,
+            "category": "Stone Fruit",
+            "name": "Cherry Plum",
+            "price": 2.79
+        },
+        {
+            "id": 54,
+            "category": "Citrus",
+            "name": "Buddha's Hand",
+            "price": 5.99
+        },
+        {
+            "id": 55,
+            "category": "Tropical",
+            "name": "Longan",
+            "price": 5.49
+        },
+        {
+            "id": 56,
+            "category": "Berries",
+            "name": "Cloudberry",
+            "price": 7.99
+        },
+        {
+            "id": 57,
+            "category": "Stone Fruit",
+            "name": "Mirabelle Plum",
+            "price": 3.49
+        },
+        {
+            "id": 58,
+            "category": "Citrus",
+            "name": "Sudachi",
+            "price": 8.49
+        },
+        {
+            "id": 59,
+            "category": "Tropical",
+            "name": "Sapodilla",
+            "price": 4.99
+        },
+        {
+            "id": 60,
+            "category": "Berries",
+            "name": "Tayberry",
+            "price": 5.29
+        },
+        {
+            "id": 61,
+            "category": "Stone Fruit",
+            "name": "Peacotum",
+            "price": 3.99
+        },
+        {
+            "id": 62,
+            "category": "Citrus",
+            "name": "Calamondin",
+            "price": 6.29
+        },
+        {
+            "id": 63,
+            "category": "Tropical",
+            "name": "Canistel",
+            "price": 7.49
+        },
+        {
+            "id": 64,
+            "category": "Berries",
+            "name": "Chesterberry",
+            "price": 6.99
+        },
+        {
+            "id": 65,
+            "category": "Stone Fruit",
+            "name": "Coco Plum",
+            "price": 3.59
+        },
+        {
+            "id": 66,
+            "category": "Citrus",
+            "name": "Kaffir Lime",
+            "price": 3.99
+        },
+        {
+            "id": 67,
+            "category": "Tropical",
+            "name": "Langsat",
+            "price": 6.79
+        },
+        {
+            "id": 68,
+            "category": "Berries",
+            "name": "Dewberry",
+            "price": 4.79
+        },
+        {
+            "id": 69,
+            "category": "Stone Fruit",
+            "name": "Miracot",
+            "price": 4.29
+        },
+        {
+            "id": 70,
+            "category": "Citrus",
+            "name": "Citron",
+            "price": 4.99
+        },
+        {
+            "id": 71,
+            "category": "Tropical",
+            "name": "Atemoya",
+            "price": 7.99
+        },
+        {
+            "id": 72,
+            "category": "Berries",
+            "name": "Acai Berry",
+            "price": 12.99
+        },
+        {
+            "id": 73,
+            "category": "Stone Fruit",
+            "name": "Peento",
+            "price": 4.49
+        },
+        {
+            "id": 74,
+            "category": "Citrus",
+            "name": "Bergamot Orange",
+            "price": 5.79
+        },
+        {
+            "id": 75,
+            "category": "Tropical",
+            "name": "Santol",
+            "price": 8.49
+        },
+        {
+            "id": 76,
+            "category": "Berries",
+            "name": "Salal Berry",
+            "price": 9.29
+        },
+        {
+            "id": 77,
+            "category": "Stone Fruit",
+            "name": "Yellow Nectarine",
+            "price": 3.29
+        },
+        {
+            "id": 78,
+            "category": "Citrus",
+            "name": "Pomander",
+            "price": 6.99
+        },
+        {
+            "id": 79,
+            "category": "Tropical",
+            "name": "Breadfruit",
+            "price": 4.99
+        }
+    ]
+}

@@ -1,35 +1,45 @@
-from flask import Flask, jsonify, request,render_template
+from flask import Flask, render_template, request, jsonify
+import json
+import os
 
 app = Flask(__name__)
 
-data = {
-    "products": [
-        {"category": "Category 1", "id": "1", "name": "Apple", "price": 100},
-        {"category": "Category 2", "id": 2, "name": "Banana", "price": 200},
-        {"category": "Category 3", "id": 3, "name": "Grapes", "price": 300},
-        {"category": "Category 4", "id": 4, "name": "Red Grapes", "price": 400},
-        {"category": "Category 5", "id": 5, "name": "	Jackfruit", "price": 500},
-        {"category": "Category 6", "id": 6, "name": "Mango", "price": 600},
-        {"category": "Category 6", "id": 7, "name": "Orange", "price": 700},
-        {"category": "Category 8", "id": 8, "name": "Tamarind", "price": 800},
-        {"category": "Category 9", "id": 9, "name": "	Custard apple", "price": 900},
-        {"category": "Category 10", "id": 10, "name": "Strawberry", "price": 1000},
-    ]
-}
+# Determine the path to the JSON file
+json_file_path = os.path.join(os.path.dirname(__file__), 'data.json')
+
+# Check if the file exists before trying to open it
+if os.path.exists(json_file_path):
+    # Load data from data.json file
+    with open(json_file_path, 'r') as f:
+        data = json.load(f)
+else:
+    # Provide default data if file not found
+    data = {"products": []}
+    print(f"Warning: data.json not found at {json_file_path}")
 
 
 @app.route("/")
 def hello_world():
     return render_template("base.html")
 
-@app.route('/product')
-def product():
-    return render_template('product.html')
-
 
 @app.route("/product")
-def return_json():
-    return jsonify(data)
+def product():
+    return render_template("product.html", products=data["products"])
+
+
+# Route for handling product search
+@app.route("/search", methods=["GET"])
+def search_products():
+    query_params = request.args
+    name = query_params.get("name")
+    if name:
+        name = name.lower()
+        # Filter products based on the search query
+        search_results = [product for product in data["products"] if name in product["name"].lower()]
+    else:
+        search_results = []  # Return empty list if no search query is provided
+    return render_template('search_results.html', products=search_results)
 
 
 @app.route("/user/<username>")
