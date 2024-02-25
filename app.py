@@ -5,12 +5,12 @@ import os
 app = Flask(__name__)
 
 # Determine the path to the JSON file
-json_file_path = os.path.join(os.path.dirname(__file__), 'data.json')
+json_file_path = os.path.join(os.path.dirname(__file__), "data.json")
 
 # Check if the file exists before trying to open it
 if os.path.exists(json_file_path):
     # Load data from data.json file
-    with open(json_file_path, 'r') as f:
+    with open(json_file_path, "r") as f:
         data = json.load(f)
 else:
     # Provide default data if file not found
@@ -28,7 +28,6 @@ def product():
     return render_template("product.html", products=data["products"])
 
 
-# Route for handling product search
 @app.route("/search", methods=["GET"])
 def search_products():
     query_params = request.args
@@ -36,10 +35,12 @@ def search_products():
     if name:
         name = name.lower()
         # Filter products based on the search query
-        search_results = [product for product in data["products"] if name in product["name"].lower()]
+        search_results = [
+            product for product in data["products"] if name in product["name"].lower()
+        ]
     else:
         search_results = []  # Return empty list if no search query is provided
-    return render_template('search_results.html', products=search_results)
+    return render_template("search_results.html", products=search_results)
 
 
 @app.route("/user/<username>")
