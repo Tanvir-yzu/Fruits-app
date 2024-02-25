@@ -22,6 +22,10 @@ data = {
 def hello_world():
     return render_template("base.html")
 
+@app.route('/product')
+def product():
+    return render_template('/product.html')
+
 
 @app.route("/product")
 def return_json():
